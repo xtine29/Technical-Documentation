@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Documentation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Ayla</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#HTML">HTML</a></li>
+      <li><a class="nav-link" href="#Tags_and_Attributes">Tags and Attributes</a></li>
+      <li><a class="nav-link" href="#Creating_Webpage">Creating Webpage</a></li>
+      <li><a class="nav-link" href="#HTML_Headings">HTML Headings</a></li>
+      <li><a class="nav-link" href="#Adding_Text">Adding Text</a></li>
+      <li><a class="nav-link" href="#Adding_Links">Adding Links</a></li>
+      <li><a class="nav-link" href="#Adding_Image">Adding Image</a></li>
+      <li><a class="nav-link" href="#HTML_List">HTML List</a></li>
+      <li><a class="nav-link" href="#HTML_Tables">HTML Tables</a></li>
+      <li><a class="nav-link" href="#Closing_an_HTML_Document">Closing an HTML Document</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+<!-- MAIN -->
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header><u>Introduction</u></header>
+      <article>
+        <p>
+          Whether you are a novice, hoping to explore the world of web design or an experienced webmaster seeking to improve your skills, Ayla is the perfect online site tailored to your web design needs. Ayla's step-by-step guide can help you learn and improve your skills in just a few hours. <br>All contents here will focus on giving you the practical skills to build your site. By the end of this tutorial you will have the know-how to create a basic website and we hope that this will inspire you to explore further into the world of HTML.<br>
+          <em>Let's start building your first or improve your Website!</em>
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="HTML">
+      <header>HTML</header>
+      <article>
+        <p>
+          Hyper Text Markup Language, or better known as HTML, is a markup language for creating Web pages. It consists of a series of elements that tell the browser how to display the content
+        </p>
+        <p>
+          HTML was first created by Tim Berners-Lee, Robert Cailliau, and others starting in 1989.Hypertext means that the document contains links that allow the reader to jump to other places in the document or to another document altogether. The latest version is known as HTML5.A Markup Language is a way that computers speak to each other to control how text is processed and presented. To do this HTML uses two things: tags and attributes.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Tags_and_Attributes">
+      <header>Tags and Attributes</header>
+      <article>
+        Tags and attributes are the basis of HTML. They work together but perform different functions – it is worth investing 2 minutes in differentiating the two.<br>
+        
+        <p>
+          <strong>Tags</strong> are used to mark up the start of an HTML element and they are usually enclosed in angle brackets.An example of a tag is: &lt;h1&gt;. Most tags must be opened &lt;h1&gt and closed &lt;/h1&gt; in order to function.
+        </p>
+        <p>
+          <strong>Attributes</strong> contain additional pieces of information and take the form of an opening tag and additional info is placed inside. <br>
+          An example of an attribute is:
+          <code>&lt;img src="First_Picture.png" alt="First Picture Together."&gt;</code>
+          In this instance, the image source (src) and the alt text (alt) are attributes of the &lt;img&gt; tag.
+        </p>
+        <p>
+          <strong>Golden Rules To Remember</strong>
+          <ul>
+            <li>The vast majority of tags must be opened (&lt;tag&gt;) and closed (&lt;/tag&gt;) with the element information such as a title or text resting between the tags.</li>
+            <li>When using multiple tags, the tags must be closed in the order in which they were opened. For example: <code>&lt;strong&gt;&lt;em&gt;This is really important!&lt;/em&gt;&lt;/strong&gt;</code>
+            </li>
+          </ul>
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Creating_Webpage">
+      <header>Creating Webpage</header>
+      <article>
+        The basic construction on an HTML Page should have these following tags:
+        <p>
+          &lt;!DOCTYPE html&gt; — This tag specifies the language you will write on the page. In this case, the language is HTML 5.<br>
+          &lt;html&gt; — This tag signals that from here on we are going to write in HTML code.<br>
+          &lt;head&gt; — This is where all the metadata for the page goes — stuff mostly meant for search engines and other computer programs.<br>
+          &lt;title&gt; — This is where we insert the page name as it will appear at the top of the browser window or tab.<br>
+          &lt;meta&gt; — This is where information about the document is stored: character encoding, name (page context), description.<br>
+          &lt;body&gt; — This is where the content of the page goes.
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt; &lt;/title&gt;
+              &lt;meta&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+        </p>
+        <p>
+          The HTML &lt;body&gt; is where we add the content which is designed for viewing by human eyes. This includes text, images, tables, forms and everything else that we see on the internet each day.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="HTML_Headings">
+      <header>HTML Headings</header>
+      <article>
+        There are six heading tags that are an important part of HTML content writing. On a page with a single piece of content (which should be most pages), the main title for that content should be an &lt;h1&gt; tag. Major sections within that content should be headlined with &lt;h2&gt;. Subsections within those sections should be headed with &lt;h3&gt;, and so on. It should be possible to extract an outline from your headline tags. This structure makes writing more organized, which (at least 99% of the time) also makes writing better.
+        <p>
+          Lets try it out!<br>
+          <img src="images/heading.png" alt="Headings">
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Adding_Text">
+      <header>Adding Text</header>
+      <article>
+        <p>
+          Adding text to our HTML page is simple using an element opened with the tag &lt;p&gt; which creates a new paragraph. We place all of our regular text inside the element &lt;p&gt;. When we write text in HTML, we also have a number of other elements we can use to control the text or make it appear in a certain way.
+        </p>
+        <table id="table-text">
+          <tr>
+            <th>Element</th>
+            <th>Meaning</th>
+            <th>Purpose</th>
+          </tr>
+          <tr>
+            <td>&lt;b&gt;</td>
+            <td>Bold</td>
+            <td>Highlight important information</td>
+          </tr>
+          <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Strong</td>
+            <td>Similarly to bold, to highlight key text</td>
+          </tr>
+          <tr>
+            <td>&lt;i&gt;</td>
+            <td>Italic</td>
+            <td>To denote text</td>
+          </tr>
+          <tr>
+            <td>&lt;em&gt;</td>
+            <td>Emphasised Text</td>
+            <td>Usually used as image captions</td>
+          </tr>
+          <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Marked Text</td>
+            <td>Highlight the background of the text</td>
+          </tr>
+          <tr>
+            <td>&lt;small&gt;</td>
+            <td>Small Text</td>
+            <td>To shrink the text</td>
+          </tr>
+          <tr>
+            <td>&lt;strike&gt;</td>
+            <td>Striked Out Text</td>
+            <td>To place a horizontal line across the text</td>
+          </tr>
+          <tr>
+            <td>&lt;u&gt;</td>
+            <td>Underlined Text</td>
+            <td>Used for links or text highlights</td>
+          </tr>
+          <tr>
+            <td>&lt;ins&gt;</td>
+            <td>Inserted Text</td>
+            <td>Displayed with an underline to show an inserted text</td>
+          </tr>
+          <tr>
+            <td>&lt;sub&gt;</td>
+            <td>Subscript Text</td>
+            <td>Typographical stylistic choice</td>
+          </tr>
+          <tr>
+            <td>&lt;sup&gt;</td>
+            <td>Superscript Text</td>
+            <td>Another typographical presentation style</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <section class="main-section" id="Adding_Links">
+      <header>Adding Links</header>
+      <article>
+        As you may have noticed, the internet is made up of lots of links. Almost everything you click on while surfing the web is a link takes you to another page within the website you are visiting or to an external site. Links are included in an attribute opened by the <a> tag. This element is the first that we’ve met which uses an attribute and so it looks different to previously mentioned tags.
+        <p>
+          <strong>The Anchor Tag</strong><br>
+          The &lt;a&gt; (or anchor) opening tag is written in the format:
+          <code>
+            &lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;
+          </code>
+          The first part of the attribute points to the page that will open once the link is clicked.Meanwhile, the second part of the attribute contains the text which will be displayed to a visitor in order to entice them to click on that link. If you are building your own website then you will most likely host all of your pages on professional web hosting.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Adding_Image">
+      <header>Adding Image</header>
+      <article>
+        The &lt;img&gt; tag has everything you need to display images on your site. Much like the <a> anchor element, &lt;img&gt; also contains an attribute. The attribute features information for your computer regarding the source, height, width and alt text of the image. <br>
+        You can check the file type of an image by right-clicking the item and selecting ‘Properties’. You can also define borders and other styles around the image using the class attribute. However, we shall cover this in a later tutorial. The file types generally used for image files online are: .jpg, .png, and (less and less) .gif. Alt text is important to ensure that your site is ranked correctly on search sites and also for visually impaired visitors to your site.
+        <p>
+          The &lt;img&gt; tag normally is written as follows:
+          The &lt;a&gt; (or anchor) opening tag is written in the format:
+          <code>
+            &lt;img src="yourimage.jpg" alt="Describe the image" height="X" width="X"&gt;
+          </code>
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="HTML_List">
+      <header>HTML List</header>
+      <article>
+        <p>
+          <strong>Ordered List</strong><br>
+          The first is an &lt;ol&gt;. This is an ordered list of contents. Inside the &lt;ol&gt; tag we list each item on the list inside &lt;li&gt; &lt;/li&gt; tags.<br>
+          <code>
+            &lt;ol&gt;
+            &lt;li&gt;First item &lt;/li&gt; 
+            &lt;li&gt;Second item &lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+          The output will look like this:<br>
+          1.First item<br>
+          2.Second item
+        </p>
+        <p>
+          <strong>Unordered List</strong><br>
+          The second type of list that you may wish to include is an &lt;ul&gt; unordered list. This is better known as a bullet point list and contains no numbers.<br>
+          <code>
+            &lt;ul&gt;
+            &lt;li&gt;First item &lt;/li&gt; 
+            &lt;li&gt;Second item &lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+          The output will look like this:<br>
+          •First item<br>
+          •Second item
+        </p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="HTML_Tables">
+      <header>HTML Tables</header>
+      <article>
+        <p>
+          When drawing a table we must open an element with the &lt;table&gt; opening tag. Inside this tag, we structure the table using the table rows, &lt;tr&gt;, and cells, &lt;td&gt;.<br>
+          An example of an HTML table is as follows:<br>
+          <code>
+            &lt;table&gt;
+              &lt;tr&gt; 
+                &lt;td&gt;Row 1 - Column 1&lt;/td&gt;
+                &lt;td&gt;Row 1 - Colunm 2&lt;/td&gt;
+                &lt;td&gt;Row 1 - Column 3&lt;/td&gt;
+              &lt;/tr&gt; 
+              &lt;tr&gt; 
+                &lt;td&gt;Row 2 - Column 1&lt;/td&gt;
+                &lt;td&gt;Row 2 - Column 2&lt;/td&gt; 
+                &lt;td&gt;Row 2 - Column 3&lt;/td&gt; 
+              &lt;/tr&gt; 
+            &lt;/table&gt;
+          </code>
+          The output will look like this:<br>
+          <table id="table-sample"> 
+              <tr> 
+                <td>Row 1 - Column 1</td> 
+                <td>Row 1 - Colunm 2 </td> 
+                <td>Row 1 - Column 3 </td> 
+              </tr> 
+              <tr> 
+                <td>Row 2 - Column 1</td> 
+                <td>Row 2 - Column 2</td> 
+                <td>Row 2 - Column 3</td> 
+              </tr> 
+            </table>
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Closing_an_HTML_Document">
+      <header>Closing an HTML Document</header>
+      <article>
+        You’ve reached the end of our absolute beginners HTML tutorial!<br>
+        The final step we need to complete is to close the &lt;body&gt; and &lt;html&gt; tags at the end of each page using the following HTML code:
+        <code>
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+        We suggest that you further enhance your skills by experimenting with the code you’ve learned using different variables.The power to create your own website is now in your hands.
+      </article>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        All the documentation in this page is taken from <a href="https://html.com/" target="_blank">HTML</a><br>
+        For more information regarding HTML, visit <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3schools - HTML</a>
+      </article>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2021 by Christine Gonzales. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
